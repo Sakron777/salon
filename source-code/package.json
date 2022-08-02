@@ -1,0 +1,39 @@
+{
+    "name": "gulp-web",
+    "version": "1.0.0",
+    "description": "project using gulp4",
+    "author": "alex",
+    "devDependencies": {
+        "browser-sync": "^2.27.5",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-cssbeautify": "^3.0.0",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-image": "^4.4.1",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-rigger": "^0.5.8",
+        "gulp-sass": "^5.1.0",
+        "gulp-strip-css-comments": "^2.0.0",
+        "gulp-uglify": "^3.0.2",
+        "panini": "^1.7.2",
+        "sass": "^1.39.2",
+        "slick-carousel": "^1.8.1"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "IE 10"
+    ],
+    "dependencies": {
+        "bootstrap": "^5.1.3",
+        "gulp-imagemin": "^8.0.0",
+        "gulp-newer": "^1.4.0",
+        "gulp-webp": "^4.0.1",
+        "imagemin-webp": "^7.0.0",
+        "jq-fakeloader": "^2.0.1",
+        "nouislider": "^15.6.0",
+        "parallax-js": "^3.1.0"
+    }
+}

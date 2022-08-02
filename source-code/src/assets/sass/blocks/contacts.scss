@@ -1,0 +1,95 @@
+.contacts {
+    margin-bottom: 55px;
+
+}
+
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($mobile-bp){
+        flex-direction: column;
+
+
+     }
+
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__adress {
+    max-width: 311px;
+    padding: 0 100px;
+
+    @include breakpoint($tablet-180){
+        padding: 0 20px;
+
+     }
+
+     @include breakpoint($mobile-bp){
+
+        justify-content: space-between;
+        margin: 15px  auto 0 auto;
+
+     }
+
+}
+
+.contacts__link,
+.contacts__text
+
+ {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'GothamPro', sans-serif;
+
+    color: $black;
+
+    position: relative;
+
+    span{
+        &::after{
+            content: "";
+            width: 0;
+            height: 1px;
+            background-color: $orange;
+
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            z-index: 1;
+
+            transition: all .5s;
+        }
+
+    //убрали черточки в конце
+        &:hover{
+            &::after{
+                width: 100%;
+
+            }
+    }
+    }
+
+    @include breakpoint($mobile-bp){
+        text-align: center;
+     }
+
+}
+
+.contacts__img {
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    width: 11px;
+
+    @include breakpoint($mobile-bp){
+        top: -10%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+     }
+
+}
+

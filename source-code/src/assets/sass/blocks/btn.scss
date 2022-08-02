@@ -1,0 +1,81 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Gothampro', sans-serif;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    text-align: center;
+    padding: 18px 25px;
+
+    border: none;
+    border-radius: 0%;
+    color: $black;
+    cursor: pointer;
+    background-color: $orange;
+
+
+    transition: all .3s;
+
+    &:hover{
+        background-color: $borange;
+
+    }
+
+    @include breakpoint($mobile-63){
+
+        margin: 0 auto;
+
+      }
+
+      &--center{
+        display: block;
+        margin: 0 auto;
+        width: 220px;
+        position: relative;
+        z-index: 10000;
+
+      }
+
+}
+
+//кнопка на вверх
+
+#button {
+  display: inline-block;
+  background-color: $dblue;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1001110;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: $wblue;
+}
+#button:active {
+  background-color: $wblue;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+

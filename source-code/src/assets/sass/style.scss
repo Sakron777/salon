@@ -1,0 +1,104 @@
+@import "vars";
+@import "reset";
+@import "mixins";
+
+//Proximanova
+
+@font-face{
+    font-family: 'Proximanova';
+    src: url('../fonts/pn/ProximaNova-Bold.woff'), format('woff');
+}
+
+@font-face{
+    font-family: 'Proximanova';
+    src: url('../fonts/pn/ProximaNova-Regular.woff'), format('woff');
+}
+
+@font-face{
+    font-family: 'Proximanova';
+    src: url('../fonts/pn/ProximaNova-Semibold.woff'), format('woff');
+}
+
+//gothampro
+
+@font-face{
+    font-family: 'Gothampro';
+    src: url('../fonts/gothampro/gothampro.ttf'), format('ttf');
+}
+
+@font-face{
+    font-family: 'Gothampro';
+    src: url('../fonts/gothampro/gothampro_medium.ttf'), format('ttf');
+}
+
+html{
+    font-size: 14px;
+    overflow-x: hidden;
+    width: 100%;
+
+
+
+
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+
+    font-family: 'Roboto', 'Lato', sans-serif;
+    font-size: 14px;
+    background-color: $fon;
+
+    line-height: 1.5;
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &:hover{
+        text-decoration: none
+    }
+}
+
+//bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/modal";
+
+
+//slick
+@import "../../../node_modules/slick-carousel/slick/slick";
+
+//fake
+@import "../../../node_modules/jq-fakeloader/css/fakeLoader";
+@import "blocks/spinner2";
+
+//bloks
+@import "blocks/container";
+@import "blocks/main";
+@import "blocks/page";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/intro";
+@import "blocks/advantages";
+@import "blocks/company";
+@import "blocks/services";
+@import "blocks/arenda";
+@import "blocks/organization";
+@import "blocks/contacts";
+@import "blocks/footer";
+//vendor
+
+

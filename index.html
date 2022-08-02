@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/img/header/fav.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@700&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Raleway:wght@300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    
+    <title>home</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <div class="fakeLoader" id="fakeLoader"></div>
+<script>
+    $(document).ready(function () {
+        $.fakeLoader({
+            timeToHide: 1800,
+            bgColor: "#080425",
+            spinner: "spinner2",
+            pos: 'fixed',// Default Position
+            top: '0px',  // Default Top value
+            left: '0px', // Default Left value
+            width: '100%', // Default width
+            height: '100%', // Default Height
+            zIndex: '99999999999',  // Default zIndex
+        });
+    });
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-33013198-7', 'auto');
+ga('send', 'pageview');
+</script>
+</head>
+
+<body class="">
+
+    
+    <svg style="display: none;">
+        <symbol id="1" viewBox="0 0 68 75">
+    <g>
+        <path d="M12.2436 1.65369C5.48193 -2.2249 0 0.952489 0 8.74492V66.2496C0 74.0498 5.48193 77.2231 12.2436 73.3482L62.5056 44.5233C69.2695 40.6433 69.2695 34.3572 62.5056 30.4781L12.2436 1.65369Z"/>
+    </g>
+        </symbol>
+        </svg>
+
+
+<div class="page" id="page">
+    <a id="button"></a>
+   <!--header-->
+   <header class="header">
+       <div class="container">
+   
+           <header class="header__first" id="header1">
+   
+               <div class="header__first-phone">
+                   <a class="header__first-link" href="tel:88002000600">
+                       <img class="header__first-left" src="assets/img/logo/ic_phone.webp" alt="phone">
+                       телефон администратора <br> 8 800 2000 600</a>
+               </div>
+   
+               <div class="header__first-logo">
+                   <img class="header__first-img" src="assets/img/logo/logo.webp" alt="logo">
+               </div>
+   
+               <div class="header__first-adress" id="nav">
+                   <p class="header__first-text">
+                       <img class="header__first-left" src="assets/img/logo/ic_map.webp" alt="map">
+                       адрес фотостудии <br> Челябинск, Худякова, 12а
+                   </p>
+               </div>
+   
+   
+               <button class="burger " type="button" id="sidebarToggle">
+                   <span>Открыть навигацию</span>
+               </button>
+   
+           </header>
+   
+   
+           <header class="">
+   
+   
+               <div class="header_mobile">
+                   <div class="header__mobile__block">
+                       <div class="header-mobile__left">
+                           <nav class="header-mobile__menu" id="navt">
+   
+                               <div class="header-mobile__spoller "> О компании</div>
+                               <ul class="header-mobile-items " style="display: none ;">
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Наша фотостудия</a>
+                                   </li>
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Отзывы</a>
+                                   </li>
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Частые вопросы</a>
+                                   </li>
+                               </ul>
+   
+                               <div class="header-mobile__spoller "> Аренда залов</div>
+                               <ul class="header-mobile-items " style="display: none ;">
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Наша фотостудия</a>
+                                   </li>
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Отзывы</a>
+                                   </li>
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Частые вопросы</a>
+                                   </li>
+                               </ul>
+                               <div class="header-mobile__spoller "> Фотосессии</div>
+                               <ul class="header-mobile-items " style="display: none ;">
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Наша фотостудия</a>
+                                   </li>
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Отзывы</a>
+                                   </li>
+                                   <li class=" header-mobile__listing">
+                                       <a class="header-mobile__links " href=""> Частые вопросы</a>
+                                   </li>
+                               </ul>
+   
+                               <a class="header__two-link" href="">
+                                   Правила
+                               </a>
+   
+                               <a class="header__two-link" href="">
+                                   Портфолио
+                               </a>
+   
+                               <div class="header__mobile-cont">
+   
+                                   <a class="header__mobile-links" href="tel:88002000600">
+                                       <img class="header__mobile-left" src="assets/img/logo/ic_phone.webp" alt="phone">
+                                       телефон администратора <br> 8 800 2000 600</a>
+   
+   
+                                   <p class="header__mobile-text">
+                                       <img class="header__mobile-left" src="assets/img/logo/ic_map.webp" alt="map">
+                                       адрес фотостудии <br> Челябинск, Худякова, 12а
+                                   </p>
+                               </div>
+   
+                           </nav>
+                           <!--меню мобайл-->
+                       </div>
+                   </div>
+               </div>
+   
+           </header>
+   
+           <header class=" header__two" id="intro">
+               <nav class="header__two-nav">
+                   <ul class="header__two-list one">
+                       <li class="header__two-block">
+   
+                           <div class="header-two__spoller "> О компании</div>
+                           <ul class="header-two-items " style="display: none ;">
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Наша фотостудия</a>
+                               </li>
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Отзывы</a>
+                               </li>
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Частые вопросы</a>
+                               </li>
+                           </ul>
+   
+                       </li>
+   
+   
+                       <li class="header__two-block">
+                           <div class="header-two__spoller "> Аренда залов</div>
+                           <ul class="header-two-items " style="display: none ;">
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Наша фотостудия</a>
+                               </li>
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Отзывы</a>
+                               </li>
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Частые вопросы</a>
+                               </li>
+                           </ul>
+                       </li>
+   
+                       <li class="header__two-block">
+                           <div class="header-two__spoller "> Фотосессии</div>
+                           <ul class="header-two-items " style="display: none ;">
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Наша фотостудия</a>
+                               </li>
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Отзывы</a>
+                               </li>
+                               <li class=" header-two__listing">
+                                   <a class="header-two__links " href=""> Частые вопросы</a>
+                               </li>
+                           </ul>
+                       </li>
+   
+                       <li class="header__two-block">
+                           <a class="header__two-link" href="">
+                               Правила
+                           </a>
+                       </li>
+   
+                       <li class="header__two-block">
+                           <a class="header__two-link" href="">
+                               Портфолио
+                           </a>
+                       </li>
+   
+                       <li class="header__two-block">
+                           <a class="header__two-link" href="">
+                               Контакты
+                           </a>
+                       </li>
+                   </ul>
+   
+               </nav>
+   
+           </header>
+   
+       </div>
+   
+   
+   </header>   <!--content-->
+
+
+   <main class="main">
+
+    <!-- intro -->
+    <section class="intro" id="intro">
+        <div class="intro__slider" id="Sliders">
+            <div>
+                <div class="intro__slider-carusel">
+                    <h1 class="intro__slider-title">Детские фотосессии по разумным ценам</h1>
+                    <p class="intro__slider-text">Забронируйте фотосъёмку и получите скидку 50% на следующую фотосессию для
+                        всей семьи!</p>
+    
+                    <div class="intro__slider-btn">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#popupbell">Арендовать
+                            зал</button>
+    
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#popupbell">Заказать
+                            съемку</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div class="intro__slider-carusel">
+                    <h1 class="intro__slider-title">Детские фотосессии по разумным ценам</h1>
+                    <p class="intro__slider-text">Забронируйте фотосъёмку и получите скидку 50% на следующую фотосессию для
+                        всей семьи!</p>
+    
+                    <div class="intro__slider-btn">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#popupbell">Арендовать
+                            зал</button>
+    
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#popupbell">Заказать
+                            съемку</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div class="intro__slider-carusel">
+                    <h1 class="intro__slider-title">Детские фотосессии по разумным ценам</h1>
+                    <p class="intro__slider-text">Забронируйте фотосъёмку и получите скидку 50% на следующую фотосессию для
+                        всей семьи!</p>
+    
+                    <div class="intro__slider-btn">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#popupbell">Арендовать
+                            зал</button>
+    
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#popupbell">Заказать
+                            съемку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots-box"></div>
+    </section>
+    
+    <!-- advantages -->
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__square"></div>
+            <h1 class="advantages__title">Наши преимущества </h1>
+            <h1 class="advantages__subtitle">5 причин прийти к нам </h1>
+    
+            <div class="advantages__inner">
+                <div class="advantages__item" data-depth="1">
+                    <img class="advantages__item-img" src="assets/img/five/icon 1.webp" alt="1">
+                    <h1 class="advantages__item-title">Современные декорации</h1>
+                    <p class="advantages__item-text">Мы постоянно совершенствуемся, основываясь на мировых тенденци,
+                        практичности и пожеланиях наших клиентов. </p>
+                </div>
+    
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="assets/img/five/icon 2.webp" alt="1">
+                    <h1 class="advantages__item-title">6 различных залов </h1>
+                    <p class="advantages__item-text">От классики до футуризма, все для вашего творчества и реализаци всех,
+                        даже самый сложных творческий идей. </p>
+                </div>
+    
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="assets/img/five/icon 3.webp" alt="1">
+                    <h1 class="advantages__item-title">Современные декорации</h1>
+                    <p class="advantages__item-text">Наши фотографы работают во всех популярных видах жанра фотографии и
+                        обеспечивают качественный результат. </p>
+                </div>
+    
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="assets/img/five/icon 4.webp" alt="1">
+                    <h1 class="advantages__item-title">Современные декорации</h1>
+                    <p class="advantages__item-text">Фотостудия имеет профессиональную технику и свет для сьёмки, есть все
+                        необходимое для комфортной работы и получение желаемого результата. </p>
+                </div>
+    
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="assets/img/five/icon 5.webp" alt="1">
+                    <h1 class="advantages__item-title">Современные декорации</h1>
+                    <p class="advantages__item-text">Мы открыты для сотрудничества, проводим мастер-классы фотографов,
+                        семинары, выездные регистрации, воркшколы и.тд. </p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <!-- company -->
+    <section class="company">
+    
+        <div class="company__intro"> </div>
+    
+        <div class="company__block">
+            <div class="company__block-square"></div>
+            <h1 class="company__block-title">О компании</h1>
+            <h1 class="company__block-subtitle">Наша фотостудия </h1>
+            <h1 class="company__block-phrase"> Van Gog фотостудия это творческое арт - пространство для реадизации любый
+                идей и задач! </h1>
+            <p class="company__block-text company__block-text--bott"> Это не просто студия для сьемки, это целый комплекс
+                услуг для вас и ваших близких.</p>
+            <p class="company__block-text"> Мы работаем по системе «все включено», обратившись к нам вам нужно только одно,
+                рассказать, что вы хотите, а мы свою очередь предложим варианты фотосъемки и варианты для реализации ваших
+                идей. </p>
+        </div>
+        <a class="btn btn--center" href="">Больше о фотостудии</a>
+    </section>
+    
+    <!-- services -->
+    <section class="services">
+        <div class="container">
+    
+    
+            <div class="services__block-square"></div>
+            <h1 class="services__block-title">Услуги</h1>
+            <h1 class="services__block-subtitle">Фотосессии </h1>
+    
+            <div class="services__inner">
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/1.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Семейная <br> Фотосессия
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/2.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Детская <br> Фотосессия
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/3.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Индивидуальная <br> Фотосессия
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/4.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Свадебная <br> Фотосессия
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/5.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Love Story <br> Фотосессия
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/6.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Для беременных <br> Фотосессия
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/7.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Бизнес <br> Портрет
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/8.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Рекламеая <br> Съемка
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/9.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Репортажная <br> Съемка
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-scale">
+                        <img class="services__item-img" src="assets/img/works/10.webp" alt="">
+                    </div>
+    
+                    <div class="services__item-content">
+                        <div class="services__item-left">
+                            <a class="services__block-arrow" href="">
+                                <img class="services__block-img" src="assets/img/works/arr.webp" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="services__item-right">
+                            <a class="services__block-link" href="">
+                                Фото <br> Проекты
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <!-- arenda -->
+    <section class="arenda">
+        <div class="container">
+            <div class="arenda__square"></div>
+            <h1 class="arenda__title">Аренда</h1>
+            <h1 class="arenda__subtitle">Наши залы </h1>
+    
+            <div class="arenda__slider" id="SliderTwo">
+                <div>
+                    <div class="arenda__slider-inner">
+                        <div class="arenda__slider-left">
+                            <img class="arenda__slider-img" src="assets/img/hall/1.webp" alt="">
+                        </div>
+    
+                        <div class="arenda__slider-right">
+                            <div class="arenda__slider-block">
+                                <h1 class="arenda__slider-title">Футуризм</h1>
+    
+                                <div class="arenda-slider-85px">
+                                    <p class="arenda__slider-text">Просторный, светлый зал, выполненный в стиле футуризм и
+                                        модерн.</p>
+                                    <button type="button" class="btn" href="">Узнать больше о зале</button>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="arenda__slider-inner">
+                        <div class="arenda__slider-left">
+                            <img class="arenda__slider-img" src="assets/img/hall/1.webp" alt="">
+                        </div>
+    
+                        <div class="arenda__slider-right">
+                            <div class="arenda__slider-block">
+                                <h1 class="arenda__slider-title">Футуризм</h1>
+    
+                                <div class="arenda-slider-85px">
+                                    <p class="arenda__slider-text">Просторный, светлый зал, выполненный в стиле футуризм и
+                                        модерн.</p>
+                                    <button type="button" class="btn" href="">Узнать больше о зале</button>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="arenda__slider-inner">
+                        <div class="arenda__slider-left">
+                            <img class="arenda__slider-img" src="assets/img/hall/1.webp" alt="">
+                        </div>
+    
+                        <div class="arenda__slider-right">
+                            <div class="arenda__slider-block">
+                                <h1 class="arenda__slider-title">Футуризм</h1>
+    
+                                <div class="arenda-slider-85px">
+                                    <p class="arenda__slider-text">Просторный, светлый зал, выполненный в стиле футуризм и
+                                        модерн.</p>
+                                    <button type="button" class="btn" href="">Узнать больше о зале</button>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="slider__btn">
+                <div>
+                    <button class="button-prev" type="button">
+                        <img src="assets/img/hall/5.webp" alt="">
+                    </button>
+                </div>
+                <div>
+                    <button class="button-next" type="button">
+                        <img src="assets/img/hall/5.webp" alt="">
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <!-- organization -->
+    <section class="organization">
+        <div class="container">
+            <div class="organization__inner">
+                <a class="organization__left" href="">
+                    <h1 class="organization__title">Организация мероприятий в наших залах</h1>
+                    <img class="organization__arrow" src="assets/img/hall/6.webp" alt="">
+                    <img class="organization__img" src="assets/img/hall/2.webp" alt="">
+                </a>
+    
+                <a class="organization__right" href="">
+                    <h1 class="organization__title">Расписание и бронирование залов</h1>
+                    <img class="organization__arrow" src="assets/img/hall/6.webp" alt="">
+                    <img class="organization__img" src="assets/img/hall/3.webp" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- contacts -->
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+    
+                <div class="contacts__phone">
+                    <a class="contacts__link" href="tel:88002000600">
+                        <img class="contacts__img" src="assets/img/cont/ic_phone.webp" alt="phone">
+                        телефон администратора <br> <span> <b>8 800 2000 600</b></span> </a>
+                </div>
+    
+                <div class="contacts__email">
+                    <a  class="contacts__text" href="mailto:vangog.fotostudia@yandex.ru">
+                    <img class="contacts__img" src="assets/img/cont/ic_mail.webp" alt="email">
+                        e-mail<br> <span><b>vangog.fotostudia@yandex.ru</b></span>
+                   </a>
+                </div>
+    
+                <div class="contacts__adress" id="nav">
+                    <p class="contacts__text">
+                        <img class="contacts__img" src="assets/img/cont/ic_map.webp" alt="map">
+                        адрес фотостудии <br> <span><b>Челябинск, Худякова, 12а</b></span>  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </main>
+   <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    © ИП Фёдоров С.С., 2017
+                </div>
+    
+                <a class="footer__right" href="">
+                    <img class="footer__logo" src="assets/img/footer/logo.webp" alt="logo">
+                   <span>Интернет-агентство Tian Group: <br></span>  создание и продвижение сайтов Челябинск
+                </a>
+            </div>
+        </div>
+    </footer></div>
+
+
+
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

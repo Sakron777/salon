@@ -1,0 +1,94 @@
+.organization {
+    margin-bottom: 60px;
+
+}
+
+.organization__inner {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint($mobile-bp){
+        display: block;
+
+
+    }
+
+}
+
+.organization__left,
+.organization__right {
+    display: flex;
+
+
+    align-items: center;
+
+    max-width: 597px;
+
+    background-color: $orange;
+    padding: 30px 70px 30px 95px;
+    transition: all .3s;
+
+    &:hover{
+        background-color: $borange;
+    }
+
+    @include breakpoint($tablet-bp){
+        padding: 25px 30px 20px 45px;
+
+     }
+
+     @include breakpoint($mobile-bp){
+        justify-content: space-between;
+        margin: 0 auto 10px auto;
+
+    }
+
+    @include breakpoint($mobile-32){
+        padding: 25px 30px 20px 15px;
+
+    }
+
+
+}
+
+
+
+.organization__title {
+    display: block;
+    width: 100%;
+    max-width: 190px;
+    font-size: 16px;
+    line-height: 24px;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    color: $black;
+
+    @include breakpoint($mobile-32){
+        line-height: 18px;
+        font-size: 14px;
+
+    }
+}
+
+.organization__arrow{
+    width: 14px;
+    height: 10px;
+    margin: 0 40px 0 90px;
+
+    @include breakpoint($tablet-bp){
+        margin: 0 20px 0 45px;
+     }
+
+     @include breakpoint($mobile-bp){
+        margin: 0 10px 0 25px;
+
+    }
+}
+
+.organization__img {
+    display: block;
+
+}
+
+

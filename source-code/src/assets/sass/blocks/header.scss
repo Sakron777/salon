@@ -1,0 +1,434 @@
+.header{
+    margin-top: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+
+
+.header__first {
+    display: flex;
+    justify-content: space-between;
+
+
+    align-items: center;
+
+    position: relative;
+    z-index: 200000;
+
+}
+
+.fixed{
+    visibility: hidden;
+    opacity: 0;
+
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    padding: 10px 0;
+    background-color: $dblue;
+
+    position: fixed;
+    right: -3px;
+
+
+    transform: translateX(0);
+
+    @include breakpoint($tablet-bp){
+        display: flex;
+        visibility: visible;
+        opacity: 0.1;
+
+        transform: translateX(-10%);
+        z-index: 200000000;
+
+        &:hover{
+            opacity: 1;
+        }
+
+
+    }
+
+}
+
+.header__first-phone{
+    margin-left: 120px;
+
+    @include breakpoint($tablet-bp){
+        margin-left: 20px;
+    }
+}
+
+
+.header__first-link {
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'GothamPro', sans-serif;
+
+    color: $grey;
+
+    position: relative;
+    @include breakpoint($tablet-bp){
+        font-size: 0;
+    }
+
+}
+
+.header__first-left{
+    position: absolute;
+    top: 20px;
+    left: -25px;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+    }
+}
+
+.header__first-img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    z-index: 0;
+}
+
+
+.header__first-adress{
+    margin-right: 120px;
+
+    @include breakpoint($tablet-bp){
+        margin-right: 20px;
+
+    }
+
+}
+
+
+.header__first-text {
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'GothamPro', sans-serif;
+
+    color: $grey;
+
+    position: relative;
+
+    @include breakpoint($tablet-bp){
+        font-size: 0;
+    }
+
+}
+
+
+/////header mobile///////////////////////////////////////////////////
+
+.header_mobile{
+    display: none;
+    @include breakpoint($tablet-bp){
+       display: block;
+
+     }
+}
+
+.header-mobile__left{
+    position: relative;
+}
+
+.header__mobile__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+}
+
+//СПОЙЛЕР мобаил
+
+
+.header-mobile__spoller{
+    width: 100%;
+
+    font-size: 13px;
+    line-height: 26px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+    color: $fon;
+
+    cursor: pointer;
+    position: relative;
+
+    &.header-mobile__spoller::before,
+    &.header-mobile__spoller::after{
+    content: "";
+    width: 8px;
+    height: 2px;
+    background-color: $grey;
+
+    position: absolute;
+    top: 12px;
+    transition: all .3s;
+}
+
+}
+
+.header-mobile-items{
+    width: 100%;
+
+    background-color: $wblue;
+
+}
+
+
+
+.header-mobile__listing{
+    width: 100%;
+
+    &:hover{
+        background-color: $lblue;
+    }
+}
+
+.header-mobile__links{
+    font-size: 14px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
+
+    color: $fon;
+
+    padding: 5px 35px;
+
+
+}
+
+.header-mobile__spoller.active::before{
+    transform: rotate(-40deg);
+}
+
+.header-mobile__spoller.active::after{
+    transform: rotate(40deg);
+}
+
+
+.header-mobile__spoller::before{
+    transform: rotate(40deg);
+    right: 11px;
+}
+
+.header-mobile__spoller::after{
+    transform: rotate(-40deg);
+    right: 17px;
+}
+
+
+
+.header__mobile-link {
+    position: relative;
+    font-size: 13px;
+    line-height: 26px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 600;
+
+
+    text-transform: uppercase;
+    color: $fon;
+}
+
+.header__mobile-cont{
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+
+.header__mobile-links {
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'GothamPro', sans-serif;
+
+    color: $grey;
+
+    position: relative;
+
+
+}
+
+.header__mobile-left{
+    position: absolute;
+    top: 20px;
+    left: -25px;
+}
+
+
+.header__mobile-text {
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'GothamPro', sans-serif;
+
+    color: $grey;
+
+    position: relative;
+}
+
+// Второй хедер/////////////////////////////////////////////////////////////////////////
+
+
+.header__two{
+    @include breakpoint($tablet-bp){
+        display: none;
+    }
+}
+
+
+.header__two-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__two-block{
+    position: relative;
+
+    background-color: $dblue;
+    padding: 30px 50px;
+
+    z-index: 1000;
+    margin-bottom: 170px;
+
+    &:hover{
+        background-color: $wblue;
+    }
+
+    @include breakpoint($tablet-180){
+        padding: 30px 40px;
+    }
+
+    @include breakpoint($tablet-105){
+        padding: 30px 30px;
+    }
+}
+
+
+
+//СПОЙЛЕР
+
+
+.header-two__spoller{
+
+    font-size: 13px;
+    line-height: 26px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 600;
+
+
+
+
+    text-transform: uppercase;
+    color: $fon;
+
+    cursor: pointer;
+    position: relative;
+
+    &.header-two__spoller::before,
+    &.header-two__spoller::after{
+    content: "";
+    width: 8px;
+    height: 2px;
+    background-color: $grey;
+
+    position: absolute;
+    top: 12px;
+    transition: all .3s;
+}
+
+}
+
+.header-two-items{
+    width: 100%;
+    position: absolute;
+    top: 86px;
+    left: 0;
+
+    background-color: $wblue;
+
+}
+
+
+
+.header-two__listing{
+    width: 110%;
+
+    &:hover{
+        background-color: $lblue;
+    }
+}
+
+.header-two__links{
+    font-size: 14px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
+
+    color: $fon;
+
+    padding: 14px 35px;
+
+    @include breakpoint($tablet-180){
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+
+    @include breakpoint($tablet-105){
+        padding: 10px 20px;
+    }
+
+}
+
+.header-two__spoller.active::before{
+    transform: rotate(-40deg);
+}
+
+.header-two__spoller.active::after{
+    transform: rotate(40deg);
+}
+
+
+.header-two__spoller::before{
+    transform: rotate(40deg);
+    right: -23px;
+}
+
+.header-two__spoller::after{
+    transform: rotate(-40deg);
+    right: -17px;
+}
+
+
+
+.header__two-link {
+    position: relative;
+    font-size: 13px;
+    line-height: 26px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 600;
+
+
+    text-transform: uppercase;
+    color: $fon;
+}
+
+
+

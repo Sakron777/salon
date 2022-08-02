@@ -1,0 +1,360 @@
+.intro {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: url('../../assets/img/header/fon1.webp')  no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+
+}
+
+
+
+.intro__slider {
+    margin-left: 150px;
+
+
+    @include breakpoint($tablet-bp){
+      margin-left: 0px;
+  }
+}
+
+.intro__slider-carusel {
+    width: 100%;
+    max-width: 550px;
+    opacity: 0;
+    animation: slider 2s linear both;
+
+
+    @include breakpoint($tablet-bp){
+      text-align: center;
+      margin: 0 auto;
+  }
+
+
+@keyframes slider{
+    0%{
+        opacity: 0;
+
+    }
+
+      100%{
+        opacity: 1;
+    }
+}
+
+}
+
+.intro__slider-title {
+    font-size: 52px;
+    line-height: 62px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    color: $fon;
+    margin-bottom: 25px;
+
+    @include breakpoint($mobile-63){
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 15px;
+      padding: 0 15px;
+    }
+
+    @include breakpoint($mobile-32){
+      font-size: 28px;
+      line-height: 32px;
+    }
+}
+
+.intro__slider-text {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Gothampro', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $fon;
+
+    @include breakpoint($mobile-63){
+      font-size: 16px;
+      line-height: 18px;
+      padding: 0 15px;
+    }
+
+    @include breakpoint($mobile-32){
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+}
+
+.intro__slider-btn {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 50px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    @include breakpoint($tablet-bp){
+      justify-content: center;
+  }
+
+  @include breakpoint($mobile-63){
+
+    flex-direction: column;
+
+  }
+
+}
+
+
+//кнопки и стрелки
+
+
+
+
+
+
+
+
+
+.slick-arrow{
+    display: block;
+     width: 34px;
+     height: 34px;
+     font-size: 0;    /*чтобы стрелки были по центу*/
+     color: transparent;
+
+     border: 0;
+     background: none;
+     cursor: pointer;
+     border-radius: 50%;
+
+     position: absolute; /*делаем стрелки для слайда*/
+     top: 50%;
+
+     z-index: 1;
+     transform: translateY(-50%);
+
+ }
+
+ .slick-arrow:after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+
+
+    border-top: 2px solid $fon;
+    border-left: 2px solid $fon;
+
+    margin: 0 auto;
+    transition: all .3s;
+
+ }
+
+ .slick-arrow:hover:after{
+    border-top: 2px solid $borange;
+    border-left: 2px solid $borange;
+ }
+
+
+
+
+ .slick-arrow::before{
+    content: "";
+    display: block;
+    width: 19px;
+    height: 25px;
+
+    border-left: 2px solid $fon;
+    transform: rotate(-45deg);
+
+    position: absolute;
+    left: 16px;
+    top: 1px;
+
+    margin: 0 auto;
+    transition: all .3s;
+
+
+ }
+
+ .slick-arrow:hover::before{
+    border-left: 2px solid $borange;
+ }
+
+
+
+ .slick-prev
+ {
+     left: -135px;
+     transform: rotate(-45deg);
+
+     @include breakpoint($tablet-bp){
+
+      left: 15px;
+  }
+
+ }
+
+ .slick-next
+ {
+    right: 15px;
+    transform: rotate(135deg);
+}
+
+
+.slide-btn {
+	text-align: center;
+	box-sizing: border-box;
+	height: 40vh;
+	background-color: yellow;
+	border: 1px solid #000;
+	cursor: pointer;
+	display: flex !important;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 20px;
+	font-size: 30px;
+	min-height: 120px;
+	transition: 0.5s all;
+}
+
+
+
+.slider-dots-box {
+	display: flex;
+
+	align-items: center;
+
+  position: absolute;
+  bottom: 50px;
+  right: 190px;
+
+  @include breakpoint($tablet-bp){
+    justify-content: center;
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+
+}
+
+.slider-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+
+    list-style-type: none;
+}
+
+
+.slider-dots button {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: block;
+	border: 0;
+	background-color: transparent;
+	margin: 0 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0;
+	transition: .3s all;
+	position: relative;
+	z-index: 0;
+}
+
+.slider-dots-box .slick-active button {
+		width: 20px;
+		height: 20px;
+
+
+}
+
+.slider-dots button:after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #9f9e9f;
+
+    position: absolute;
+    top: 50%;
+
+    transition: all .3s;
+
+    transform: translate(0, -50%)
+
+}
+
+.slider-dots button:hover:after {
+  background-color: $borange;
+}
+
+
+ .slick-active button:after{
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+.slider-dots-box .slick-active button:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	border: 3px solid rgba(155, 155, 155, 1);
+
+	border-radius: 50%;
+}
+
+.circle-bg {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgba(0, 0, 0, 0.05);
+  stroke-width: 2;
+  stroke-linecap: butt;
+}
+.circle-go {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 3;
+  stroke-linecap: round;
+	animation: progress 40s;
+	stroke-dasharray: 360px;
+	stroke-dashoffset: 360;
+}
+
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
